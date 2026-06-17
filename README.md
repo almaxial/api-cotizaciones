@@ -1,18 +1,30 @@
-# Mi API de cotizaciones
+# API de Cotizaciones
 
-API REST en FastAPI que consume una API pública de cotizaciones,
-procesa la respuesta y la expone como JSON.
+API desarrollada con FastAPI que consulta cotizaciones del dólar desde una API externa.
 
-## Qué demuestra
-- FastAPI + async/await + httpx (consumo de APIs externas)
-- Validación con Pydantic, manejo de errores con status codes
-- Tests con pytest, proyecto estructurado en routers
+## Tecnologías
 
-## Cómo correrlo
-```
-py -m venv .venv
-.venv\Scripts\Activate.ps1
+- Python
+- FastAPI
+- HTTPX
+- Pytest
+- Git y GitHub
+
+## Funcionalidades
+
+- Consulta cotizaciones por tipo de dólar.
+- Consumo de APIs externas.
+- Cálculo automático del spread.
+- Validación de respuestas.
+- Tests automatizados.
+
+## Instalación
+
+```bash
 pip install -r requirements.txt
+
+## Ejecución
+
 fastapi dev app/main.py
 ```
 Después: http://127.0.0.1:8000/docs
